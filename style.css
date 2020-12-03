@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(fundo.jpg);
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*VISOR*/
+
+#calculadora{
+    background-color: #ccc;
+    width: 350px;
+    height: 480px;
+    display: flex;
+    flex-direction: column;
+}
+
+#visor{
+    width: auto; /*perguntar pq colocando 100% aqui o visor fica saindo do espaco*/
+    height: 80px;
+    margin: 3px;
+    background-color: gray;
+    display: flex;
+    flex-direction: column;
+}
+
+#historico{
+    height: 15px;
+    width: auto;
+    /* background-color: red; */
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    text-align: right;
+    color: black;
+}
+
+#principal{
+    /* background-color: white; */
+    height: 100%;
+    font-size: 2rem;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    text-align: right;
+    color: black;
+}
+
+
+/*BOTOES*/
+#botoes{
+    display: grid;
+    margin: 3px;
+    height: 100%;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+#botoes>button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    background-color: black;
+    color: white;
+    outline: none;
+    font-size: 1.5rem;
+}
+
+#botoes>button:hover{
+    background-color: #444;
+}
+
+#botoes>button:disabled{
+    background-color: #222;
+}
+
+/* #botoes>button>.bigual:hover{
+    background-color: white;
+} */
