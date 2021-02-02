@@ -5,3 +5,7 @@ Tecnologia usadas: HTMH, CSS e Javascript
 
 Página única
 <img src="pagina.JPG">
+
+<hr>
+Para ir à publucação, acesse
+https://gustas01.github.io/calculadora/
